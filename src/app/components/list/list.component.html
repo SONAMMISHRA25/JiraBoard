@@ -1,0 +1,11 @@
+<div class="list" (dragover)="onDragOver($event)" (drop)="onDrop($event)">
+    <div class="list-header">
+      <span>{{ list.title }}</span>
+      <button (click)="onRemoveList()">X</button>
+    </div>
+    <div class="cards">
+      <app-card *ngFor="let card of list.cards" [card]="card" (remove)="removeCard($event)"></app-card>
+    </div>
+    <button (click)="addCard()">+ Add Card</button>
+  </div>
+  

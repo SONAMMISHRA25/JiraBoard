@@ -1,0 +1,9 @@
+<div class="card" draggable="true" (dragstart)="onDragStart($event)">
+    <div class="card-header">
+      <span>{{ card.title }}</span>
+      <button (click)="onRemoveCard()">X</button>
+    </div>
+    <p>{{ card.description }}</p>
+    <small>Created: {{ card.createdAt | date: 'short' }}</small>
+  </div>
+  

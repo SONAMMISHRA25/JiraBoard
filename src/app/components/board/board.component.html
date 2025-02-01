@@ -1,0 +1,7 @@
+<div class="board">
+    <div *ngFor="let list of lists">
+      <app-list [list]="list" (remove)="removeList($event)"></app-list>
+    </div>
+    <button (click)="addList()">+ Add List</button>
+  </div>
+  

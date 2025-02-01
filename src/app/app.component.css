@@ -1,0 +1,15 @@
+mat-sidenav-container {
+    height: 100vh; /* Ensure it takes full viewport height */
+    display: flex;
+  }
+  
+  mat-sidenav {
+    width: 250px; /* Adjust width */
+  }
+  
+  mat-sidenav-content {
+    flex: 1;
+    overflow: auto;
+    padding: 16px;
+  }
+  
